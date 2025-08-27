@@ -20,5 +20,5 @@ jobs:
           python-version: '3.10'
 
       - name: Run Python script
-        run:  python src 
+        run:  python3 src/calculator/operations.py
 
