@@ -3,7 +3,7 @@ name: python_Application
 on:
   push:
     paths:
-      - '**.py'  # Run only when .py files change in the repo
+      - 'src/**/*.py'  # Run only when .py files change in the repo
   workflow_dispatch:
 
 jobs:
