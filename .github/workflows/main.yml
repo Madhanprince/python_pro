@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths: 
-      'src/**/*.py' 
+      'src' 
 jobs:
   build:
     runs-on: windows-latest
