@@ -20,5 +20,5 @@ jobs:
           python-version: '3.10'
 
       - name: Run Python script
-        run:  python python_pro/operations.py
+        run:  python src 
 
