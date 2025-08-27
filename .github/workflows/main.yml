@@ -2,6 +2,8 @@ name: python_Application
 
 on:
   push:
+    branches:
+      - main
     paths:
       - 'src/**/*.py'  # Run only when .py files change in the repo
   workflow_dispatch:
