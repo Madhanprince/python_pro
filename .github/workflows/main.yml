@@ -1,18 +1,23 @@
-name : pyhton_Application
+name: python_Application
 
-on : 
-  push : 
-    paths : 
-      C:\Users\RMCPDEDT024\Desktop\python_pro 
-jobs : 
-  build :
+on:
+  push:
+    paths:
+      - '**.py'  # Run only when .py files change in the repo
+  workflow_dispatch:
+
+jobs:
+  build:
     runs-on: windows-latest
-    steps :
+
+    steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: python setup 
+
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-      - name: run python script
-        run : python operations.py 
+
+      - name: Run Python script
+        run: python operations.py
